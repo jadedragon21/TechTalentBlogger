@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tech Talent Blog-it-Success</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <div th:replace="fragments/styles :: head-styles"></div>
+</head>
+<body>
+<div class="container">
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <h3>Blog Post-it Form</h3>
+    <h5>Thank you for Posting!</h5>
+    <h4>Your Blog-it:</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-dark">
+                <div class="panel-heading">
+                    <div>
+                        <p>Title:</p> <h1 th:text="${title}"> </h1>
+                        <p>Blog:</p> <p th:text="${blogEntry}"/>
+                        <p>Authored By:</p><p th:text="${author}"/>
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                    <!-- Link to Update -->
+                    <!-- Link to Show  -->
+                    <!--  Link to Destroy -->
+
+                    <a th:href="@{/}">
+                        <button class="btn btn-dark">Home</button>
+                    </a>
+                     <p1>is where your</p1>
+                    <a th:href="@{/blogposts/new}">
+                        <button class="btn btn-dark">New Blog-It Posts</button>
+                    </a>
+                    <p1>Heart is -></p1>
+                    <a class="btn btn-dark" href="https://www.youtube.com/channel/UCchBatdUMZoMfJ3rIzgV84g">Viva La Dirt League</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="fragments/styles :: scripts"></div>
+</body>
+</html>

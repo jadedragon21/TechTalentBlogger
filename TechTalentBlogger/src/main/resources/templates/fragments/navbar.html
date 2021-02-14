@@ -1,0 +1,112 @@
+<div th:fragment="navbar">
+<!--    <nav class="navbar navbar-default">-->
+<!--        <div class="container-fluid">-->
+<!--            &lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+<!--            <div class="navbar-header">-->
+<!--                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+<!--                    <span class="sr-only">Togg Navi</span><span class= "bi bi-emoji-heart-eyes"></span>-->
+<!--                    <span class="icon-bar"><i class="bi bi-file-earmark-post"></i></span>-->
+<!--                    <span class="icon-bar"><i class="bi bi-egg"></i></span>-->
+
+<!--                </button>-->
+<!--                <ul class="nav navbar-nav navbar-left">-->
+<!--                    <li><a class="navbar-brand" th:href="@{/}">Home Page</a></li>-->
+<!--                    <li><a th:href="@{/blogposts/new}">New Blog-It Post</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+<!--                <ul class="nav navbar-nav navbar-right">-->
+<!--                    <li class="dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Post-It User Profile <span class="caret"></span></a>-->
+<!--                        <ul class="dropdown-menu">-->
+<!--                            <li><a href="/">Home</a></li>-->
+<!--                            <li><a href="#">Another action</a></li>-->
+<!--                            <li><a href="#">Something else here</a></li>-->
+<!--                            <li role="separator" class="divider"></li>-->
+
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--    </nav>-->
+<!--</div>-->
+
+
+
+<!-- Basic navbar: Button (change to .container-fluid for full width navbar) -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark navbar-box-shadow">
+    <div class="container px-0 px-xl-3">
+        <a class="navbar-brand order-lg-1 mr-0 pr-lg-2 mr-lg-4" href="#">
+            <img class="spinner-border" width="50" src="../static/images/Sheep.png" th:src="@{images/Sheep.png}" alt="sheep"/>
+        </a>
+        <div class="d-flex align-items-center order-lg-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse1">
+                <span class="navbar-toggler-icon">Togg Navi</span>
+                </button>
+            <a class="btn btn-dark d-none d-sm-inline-block ml-3" href="/">Post-It Blogs</a><img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50"  class="img-fluid" alt="llama">
+        </div>
+        <div class="collapse navbar-collapse order-lg-2" id="navbarCollapse1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="btn btn-dark" href="/">Home</a></li>
+<!--                <img class="spinner-border" width="50" src="../static/images/Sheep.png" th:src="@{images/Sheep.png}" alt="sheep"/>-->
+                <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50"  class="img-fluid" alt="llama">
+                <li class="nav-item"><a class="btn btn-dark" href="/blogposts/new">New Blog-It Post</a></li>
+<!--                <img class="spinner-border" width="50" src="../static/images/Sheep.png" th:src="@{images/Sheep.png}" alt="sheep"/>-->
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Videos/Buttons</button><ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item active btn-dark" href="/">Back to Home Page</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCchBatdUMZoMfJ3rIzgV84g">Viva La Dirt League</a></li>
+                        <li><a class="dropdown-item" href="/blogposts/new">New Blog-It Post</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="/">
+                            <button class="btn btn-dark">Edit Your Post</button></a></li>
+                        <li><a class="dropdown-item" href="/">
+                            <button class="btn btn-dark">Delete Your Post</button></a></li>
+                    </ul>
+                </div>
+            </ul><img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50"  class="img-fluid" alt="llama">
+        </div>
+    </div>
+    </header>
+
+
+    <!--                <li class="nav-item dropdown">-->
+    <!--                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>-->
+    <!--                    <ul class="dropdown-menu">-->
+    <!--                        <li><a class="dropdown-item" href="#">Action link</a></li>-->
+    <!--                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"-->
+    <!--                                                aria-expanded="false"> Dropdown <span class="caret"></span></a>-->
+    <!--                            <ul class="dropdown-menu">-->
+    <!--                                <li><a class="dropdown-item" href="#">Action link</a></li>-->
+    <!--                                <li><a class="dropdown-item" href="#">Another action</a></li>-->
+    <!--                                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+    <!--                                <<li><a class="dropdown-item" href="https://www.youtube.com/channel/UCchBatdUMZoMfJ3rIzgV84g">Viva La Dirt League</a></li>-->
+    <!--                            </ul>-->
+    <!--                        </li>-->
+    <!--                        <li><a class="dropdown-item" href="#">Another action</a></li>-->
+    <!--                        <li class="dropdown-divider"></li>-->
+    <!--                        <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+    <!--                    </ul>-->
+    <!--                </li>-->
+    <!--                <li class="nav-item">-->
+    <!--                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+    <!--                </li>-->
+
+
+
+<!--    <div class="dropdown">-->
+<!--        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--            Dropdown-->
+<!--        </button>-->
+<!--        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">-->
+<!--            <li><a class="dropdown-item active" href="/">Back to Home Page</a></li>-->
+<!--            <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCchBatdUMZoMfJ3rIzgV84g">Viva La Dirt League</a></li>-->
+<!--            <li><a class="dropdown-item" href="/blogposts/new">New Blog-It Post</a></li>-->
+<!--            <li><hr class="dropdown-divider"></li>-->
+<!--            <li><a class="dropdown-item" href="#">Separated link</a></li>-->
+<!--            <li><a class="dropdown-item" href="@{blogposts/{id}(id=${blog.id})}">-->
+<!--                <button class="btn btn-light">Edit Post</button></a></li>-->
+<!--        </ul>-->
+<!--    </div>-->

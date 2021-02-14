@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TechTalent Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <div th:replace="fragments/styles :: head-styles"></div>
+    <div th:replace="fragments/navbar :: navbar"></div>
+</head>
+<body>
+
+<div class="container">
+
+<br>
+    <h1>Welcome to Our Blog Post Site!</h1>
+
+</br>
+    <div class="row">
+        <div th:each="blog:${posts}">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 th:text="${blog.title}"></h2>
+                    </div>
+                    <div class="panel-body">
+                        <strong><p th:text="${blog.author}"/></strong>
+                        <p th:text="${blog.blogEntry}"/>
+                    </div>
+                    <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="150" length="150" alt=" rainbow alpaca" />
+                    <div class="panel-footer">
+
+
+                        <div class="card-footer">
+
+                            <a href="#" th:href="@{blogposts/{id}(id=${blog.id})}">
+                                <button class="btn btn-light">Edit Post</button>
+                            </a>
+
+
+                            <!-- Link to Show  -->
+<!--                            <div><h1></h1></div>-->
+<!--                            <form action="#" th:action="@{'/blogposts/{id}'(id=${blog.id})}" th:method="delete">-->
+<!--                                <div class="form-horizontal">-->
+<!--                                    <input type="hidden" name="_method" value="delete"/>-->
+<!--                                    <button type="submit" class="btn btn-danger btn-block" th:text="Delete">Delete-->
+<!--                                    </button>-->
+<!--                                -->
+<!--                                <a href="#" th:href="@{blogposts/{id}(id=${blog.id})}">-->
+<!--                                    <button class="btn btn-light">Edit Post</button>-->
+<!--                                </a>-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                            <div><h1></h1></div>-->
+                            <!-- Link to Delete  -->
+                            <form action="#" th:action="@{'/blogposts/{id}'(id=${blog.id})}" th:method="delete"
+                                  class="form-horizontal">
+                                <div class="form-group">
+                                    <input type="hidden" name="_method" value="delete"/>
+                                    <button type="submit" class="btn btn-danger btn-block" th:text="Delete">Delete
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div th:replace="fragments/styles :: scripts"></div>
+</body>
+</html>

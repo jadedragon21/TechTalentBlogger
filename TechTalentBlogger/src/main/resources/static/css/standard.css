@@ -1,0 +1,71 @@
+body{
+	background-color: #141414;
+}
+
+.container{
+	background-color: #72787a;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	text-align:center;
+	color:#62bfb7;
+	font-family: Segoe Script;
+}
+
+.container button.btn.btn-light{
+text-align: center;
+ color: #e82009;
+ }
+
+ div.container:nth-child(1){
+ text-align: center;
+
+ background-color: #62bfb7;
+ }
+ h1{
+ margin:
+ color:#62bfb7;
+text-align: center;
+ }
+ h2{
+  font-size: 30pt;
+  color:#080808;
+  text-align:center;
+  font-weight: bold;
+ }
+
+ h3{
+ margin-top: 20px;
+ font-size: 30pt;
+ color:#62bfb7;
+ font-weight: bold;
+}
+h4{
+ font-size: 24pt;
+ color:#62bfb7;
+ font-weight: bold;
+}
+h5{
+margin-top: 30px;
+margin-bottom: 30px;
+font-size: 24pt;
+ color:#080808;
+ font-weight: bold;
+}
+p{
+font-size: 20pt;
+font-weight: bold;
+color: #080808;
+text-align: center;
+}
+panel-heading{
+color: #080808;
+}
+panel-body{
+color: #62bfb7;
+}
+
+#navbarCollapse1{
+background-color: #62bfb7;
+}
